@@ -1,0 +1,147 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gradientMove 5s infinite alternate;
+  }
+  
+  /* Background Gradient Animation */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Cute Login Container Styles */
+  .cute-login-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  /* Fade-in Animation for Login Container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .cute-title {
+    font-size: 2rem;
+    color: #ff8ba7;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Floating Title Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .cute-login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cute-label {
+    font-size: 1rem;
+    color: #6c63ff;
+    margin-bottom: 5px;
+  }
+  
+  .cute-input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    background-color: #fff0f5;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .cute-input:focus {
+    animation: glow 0.8s infinite alternate;
+  }
+  
+  /* Glowing Input Focus Animation */
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px #ff8ba7;
+    }
+    to {
+      box-shadow: 0 0 10px #ff6f91;
+    }
+  }
+  
+  .cute-button {
+    background-color: #ff8ba7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cute-button:hover {
+    animation: bounce 0.4s ease-in-out;
+  }
+  
+  /* Button Hover Bounce Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .cute-error {
+    color: #ff6f91;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Shake Animation for Login Container */
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+  }

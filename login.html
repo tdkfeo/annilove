@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="cute-login-container">
+    <h1 class="cute-title">💖LOGIN💖</h1>
+    <form class="cute-login-form" id="loginForm">
+      <div>
+      <label for="username" class="cute-label">Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name" class="cute-input" required>
+      </div>
+      <div>
+      <label for="password" class="cute-label">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" class="cute-input" required>
+      </div>
+      <button type="submit" id="loginButton" class="cute-button">Submit</button>
+    </form>
+    <p id="error-message" class="cute-error" style="display: none;">Invalid username or password. Please try again.</p>
+  </div>
+  <script src="event2.js"></script>
+</body>
+</html>
